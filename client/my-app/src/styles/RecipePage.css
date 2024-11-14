@@ -1,0 +1,128 @@
+/* Recipe Page Container */
+.recipe-page-container {
+    width: 100%;
+    max-width: 1400px; /* Slightly reduced width for tighter layout */
+    margin: 120px auto; /* Balanced margin */
+    padding: 50px; /* Increased padding for breathing space */
+    background-color: #f9f9f9; /* Softer background color for better readability */
+    border-radius: 20px; /* Smooth rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for a premium feel */
+    transition: box-shadow 0.4s ease, transform 0.4s ease; /* Smooth transition with added depth */
+}
+
+.recipe-page-container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* More dramatic hover effect */
+    transform: translateY(-5px); /* Lift on hover for depth */
+}
+
+/* Recipe Title */
+.recipe-title {
+    text-align: center;
+    font-size: 3.5rem; /* Larger for a striking impact */
+    color: #2c3e50; /* Darker, modern shade */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px; /* Slightly larger space for visual hierarchy */
+    letter-spacing: 1.5px; /* Refined spacing */
+    text-transform: uppercase; /* Uppercase for bold, modern look */
+    font-weight: 700; /* Bold weight for emphasis */
+}
+
+/* Recipe Image */
+.recipe-image {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px; /* Subtle rounding for softer look */
+    margin-bottom: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth and noticeable */
+}
+
+.recipe-image:hover {
+    transform: scale(1.07); /* More pronounced zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Recipe Details */
+.recipe-details {
+    font-size: 1.3rem; /* Slightly larger for readability */
+    color: #4d4d4d; /* Darker gray for cleaner text */
+    line-height: 1.9; /* Extra space for better readability */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+/* Ordered and Unordered Lists */
+ul, ol {
+    padding-left: 35px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.instructions-list li {
+    margin-bottom: 18px; /* Increased space for clarity */
+    font-size: 1.15rem; /* Slight increase for clarity */
+    color: #3a3a3a; /* Darker for more visibility */
+    position: relative;
+    padding-left: 25px;
+}
+
+.instructions-list li::before {
+    content: "✔"; /* Maintain the checkmark for positivity */
+    color: #28a745;
+    position: absolute;
+    left: 0;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+/* Instructions Paragraph */
+.instructions-text p {
+    margin-bottom: 25px;
+    font-size: 1.2rem; /* Slightly larger for clarity */
+    color: #555;
+    line-height: 1.8; /* Better readability */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 28px; /* Larger button for emphasis */
+    border-radius: 30px; /* Softer, modern look */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600; /* Bolder for better visibility */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px; /* Slight spacing for modern feel */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-4px); /* More noticeable lift */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add subtle shadow on hover */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .recipe-title {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+
+    .recipe-page-container {
+        padding: 25px; /* Compact padding for mobile */
+    }
+
+    .recipe-details {
+        font-size: 1.1rem; /* Adjust text size for readability */
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1rem; /* Adjust button size */
+    }
+}
